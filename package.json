@@ -24,6 +24,10 @@
     "ai"
   ],
   "author": "Lautaro Barba",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautarobarba/bookstack_mcp_server.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.1",
