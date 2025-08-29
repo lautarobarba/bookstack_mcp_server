@@ -1,6 +1,6 @@
 # BookStack MCP Server
 
-Un servidor del Protocolo de Contexto de Modelo (MCP) que proporciona una interfaz completa para la API de BookStack, permitiendo que modelos de IA generen y editen contenido de wiki.
+Un servidor del MCP que proporciona una interfaz completa para la API de BookStack, permitiendo que modelos de IA generen y editen contenido de la wiki.
 
 ## Características
 
@@ -82,7 +82,7 @@ npm start
 O ejecutar directamente:
 
 ```bash
-node dist/index.js
+node build/index.js
 ```
 
 ### Integración con Cliente MCP
