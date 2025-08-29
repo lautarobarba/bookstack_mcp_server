@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@lautarobarba/bookstack-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP Server for BookStack API - Allows AI models to interact with BookStack wiki",
   "main": "build/index.js",
   "scripts": {
