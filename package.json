@@ -12,7 +12,8 @@
     "test-simple": "node test-simple.js",
     "test-interactive": "node test-mcp.js",
     "lint": "eslint src --ext .ts",
-    "format": "prettier --write src/**/*.ts"
+    "format": "prettier --write src/**/*.ts",
+    "inspect": "npx @modelcontextprotocol/inspector node build/index.js"
   },
   "keywords": [
     "mcp",
