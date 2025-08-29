@@ -97,12 +97,34 @@ Agrega esta configuración a tu archivo de configuración de Claude Desktop:
 {
   "mcpServers": {
     "bookstack": {
-      "command": "node",
-      "args": ["/ruta/a/tu/mcp_server/dist/index.js"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@lautarobarba/bookstack-mcp-server"],
       "env": {
-        "BOOKSTACK_BASE_URL": "https://tu-bookstack.example.com",
-        "BOOKSTACK_TOKEN_ID": "tu_token_id",
-        "BOOKSTACK_TOKEN": "tu_token_secreto"
+        "BOOKSTACK_BASE_URL": "${BOOKSTACK_BASE_URL}",
+        "BOOKSTACK_TOKEN_ID": "${BOOKSTACK_TOKEN_ID}",
+        "BOOKSTACK_TOKEN": "${BOOKSTACK_TOKEN}"
+      }
+    }
+  }
+}
+```
+
+#### Configuración de VS Code
+
+Agrega esta configuración a tu archivo .vscode/mcp.json:
+
+```json
+{
+  "servers": {
+    "bookstack": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@lautarobarba/bookstack-mcp-server"],
+      "env": {
+        "BOOKSTACK_BASE_URL": "${BOOKSTACK_BASE_URL}",
+        "BOOKSTACK_TOKEN_ID": "${BOOKSTACK_TOKEN_ID}",
+        "BOOKSTACK_TOKEN": "${BOOKSTACK_TOKEN}"
       }
     }
   }
